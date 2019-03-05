@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="server">Create server</string>
+    <string name="ip_address">Enter the ip-address</string>
+    <string name="choice_server_or_connection">or connect to</string>
+    <string name="connection">connect</string>
+    <string name="nickname">Enter your nickname</string>
+    <string name="enter_text">Enter text</string>
+    <string name="send">send</string>
+</resources>

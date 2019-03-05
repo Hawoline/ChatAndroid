@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/create_server_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/server"
+                android:onClick="onCreateServer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choice_server_or_connection" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ip_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/ip_address"
+                android:inputType="text"
+                android:onClick="onConnectToServer"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connection"
+                android:onClick="onConnectToServer"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/nickname_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/nickname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/log_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            android:longClickable="false"
+            android:lines="10"/>
+
+        <EditText
+            android:id="@+id/input_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_text"
+            android:inputType="text"
+            android:onClick="onSendMessage"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
